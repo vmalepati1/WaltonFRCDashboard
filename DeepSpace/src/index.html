@@ -1,18 +1,109 @@
-<!DOCTYPE html>
-
 <html>
-<head>
-	<title>Walton Dashboard</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-	<div>Left Encoder:</div>
-	<div>Right Encoder:</div>
-
-	<div id="camera"></div>
-	
-	<script src="components/multicamera.js"></script>
-</body>
-
+	<head>
+		<meta charset="utf-8">
+		<title>WaltonDashboard</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+		<div class="w-layout-grid grid-3">
+			<h1 id="w-node-f27107eb2fb2-6cf0ea0e" class="heading-3">Robot Status: </h1>
+			<h1 id="w-node-6b29bc748a04-6cf0ea0e" class="heading-4">Match Time: </h1>
+			<h3 id="w-node-40010e91b402-6cf0ea0e" class="heading-14">Camera Feed:</h3>
+			<div id="w-node-bb47a0c5a3a3-6cf0ea0e">
+				<img src="assets/example_camera_feed.png" sizes="(max-width: 730px) 100vw, 730px" alt="" class="image-2">
+				<h5 class="heading-16">Total Used Mbps:</h5>
+			</div>
+			<div id="w-node-0ac5d3504c2f-6cf0ea0e" class="w-layout-grid grid-4">
+				<div id="w-node-43298ae6133b-6cf0ea0e">
+					<h4 class="heading-17">Battery Voltage:</h4>
+					<svg
+						class="progress-ring-bv"
+						width="120"
+						height="120">
+						<defs>
+							<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+								<stop offset="0%"   stop-color="#8D48AB"/>
+								<stop offset="100%" stop-color="#46C5DC"/>
+							</linearGradient>
+						</defs>
+						<circle
+							class="progress-ring-bv__circle"
+							stroke="url(#linear)"
+							stroke-width="6"
+							fill="transparent"
+							r="48"
+							cx="60"
+							cy="60"/>
+					</svg>
+				</div>
+				<div id="w-node-15e9f934ad50-6cf0ea0e">
+					<h4 class="heading-20">RIO CPU Use:</h4>
+					<svg
+						class="progress-ring-cpu"
+						width="120"
+						height="120">
+						<defs>
+							<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+								<stop offset="0%"   stop-color="#8D48AB"/>
+								<stop offset="100%" stop-color="#46C5DC"/>
+							</linearGradient>
+						</defs>
+						<circle
+							class="progress-ring-cpu__circle"
+							stroke="url(#linear)"
+							stroke-width="6"
+							fill="transparent"
+							r="48"
+							cx="60"
+							cy="60"/>
+					</svg>
+				</div>
+				<div id="w-node-3defdb326642-6cf0ea0e">
+					<h4 class="heading-19">Power Draw:</h4>
+					<svg
+						class="progress-ring-pd"
+						width="120"
+						height="120">
+						<defs>
+							<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+								<stop offset="0%"   stop-color="#8D48AB"/>
+								<stop offset="100%" stop-color="#46C5DC"/>
+							</linearGradient>
+						</defs>
+						<circle
+							class="progress-ring-pd__circle"
+							stroke="url(#linear)"
+							stroke-width="6"
+							fill="transparent"
+							r="48"
+							cx="60"
+							cy="60"/>
+					</svg>
+				</div>
+				<div id="w-node-157ec8ba6692-6cf0ea0e">
+					<h4 class="heading-21">RIO RAM Use:</h4>
+					<svg
+						class="progress-ring-ram"
+						width="120"
+						height="120">
+						<defs>
+							<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+								<stop offset="0%"   stop-color="#8D48AB"/>
+								<stop offset="100%" stop-color="#46C5DC"/>
+							</linearGradient>
+						</defs>
+						<circle
+							class="progress-ring-ram__circle"
+							stroke="url(#linear)"
+							stroke-width="6"
+							fill="transparent"
+							r="48"
+							cx="60"
+							cy="60"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

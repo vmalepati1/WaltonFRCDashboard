@@ -101,7 +101,7 @@ function createWindow() {
         // It's best if the dashboard takes up as much space as possible without covering the DriverStation application.
         // The window is closed until the python server is ready
         show: false,
-        icon: __dirname + '/../images/walton-robotics-logo.jpg'
+        icon: __dirname + '/assets/walton_robotics_logo.jpg'
     });
     // Move window to top (left) of screen.
     mainWindow.setPosition(0, 0);
