@@ -1,4 +1,4 @@
-/* Generated on: Fri May 10 2019 23:42:15 GMT+0000 (UTC) */
+/* Generated on: Sat May 11 2019 00:10:11 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -80,9 +80,9 @@
 }
 
 .grid-3 {
-  grid-row-gap: 19px;
+  grid-row-gap: 0px;
   grid-template-areas: ".";
-  -ms-grid-rows: auto 19px auto 19px auto 19px auto;
+  -ms-grid-rows: auto 0px auto 0px auto 0px auto;
   grid-template-rows: auto auto auto auto;
 }
 
@@ -286,6 +286,21 @@
   justify-self: center;
   -ms-grid-row-align: start;
   align-self: start;
+}
+
+#w-node-6109ad679e86-6cf0ea0e {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
 }
 
 #w-node-bb47a0c5a3a3-6cf0ea0e {
