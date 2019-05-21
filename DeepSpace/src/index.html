@@ -4,15 +4,13 @@
 		<title>WaltonDashboard</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<meta content="Webflow" name="generator">
-		<link href="https://uploads-ssl.webflow.com/5cd029db776bf60a4ef0ea0d/css/walton-dashboard-a5c9d1.webflow.cffa669dc.css" rel="stylesheet" type="text/css">
+		<link href="https://uploads-ssl.webflow.com/5cd029db776bf60a4ef0ea0d/css/walton-dashboard-a5c9d1.webflow.8a520ead0.css" rel="stylesheet" type="text/css">
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
 		<link href="https://uploads-ssl.webflow.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 		<link href="https://uploads-ssl.webflow.com/img/webclip.png" rel="apple-touch-icon">
 	</head>
 	<body class="body">
 		<div class="w-layout-grid grid-3">
-			<h1 id="w-node-f27107eb2fb2-6cf0ea0e" class="heading-3">Robot Status: </h1>
-			<h1 id="w-node-6b29bc748a04-6cf0ea0e" class="heading-4">Match Time: </h1>
 			<h3 id="w-node-40010e91b402-6cf0ea0e" class="heading-14">Camera Feed:</h3>
 			<img src="https://uploads-ssl.webflow.com/5cd029db776bf60a4ef0ea0d/5cd611d08463a52e35af5aa2_WaltonRoboticsLogo.jpg" width="40" id="w-node-6109ad679e86-6cf0ea0e" alt="">
 			<div id="w-node-bb47a0c5a3a3-6cf0ea0e">
@@ -21,219 +19,33 @@
 			</div>
 			<div id="w-node-8ee782d0ec2a-6cf0ea0e" class="w-layout-grid grid-13">
 				<div id="w-node-3e2e63a6d6f4-6cf0ea0e" class="w-layout-grid grid-14">
-					<svg id="robotDiagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330px" height="250px" viewBox="0 0 330 250" preserveAspectRatio="xMidYMid meet">
-						<defs id="svgEditorDefs">
-						  <marker id="arrow10-8-right" markerHeight="8" markerUnits="strokeWidth" markerWidth="10" orient="auto" refX="-3" refY="0" viewBox="-15 -5 20 20">
-							<path d="M -15 -5 L 0 0 L -15 5 z" fill="#8D48AB" />
-						  </marker>
-						  <marker id="arrow20-16-left" markerHeight="16" markerUnits="strokeWidth" markerWidth="20" orient="auto" refX="3" refY="0" viewBox="0 -5 20 20">
-							<path d="M 15 -5 L 0 0 L 15 5 z" fill="#8D48AB" />
-						  </marker>
-						  <marker id="circle8" markerHeight="8" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="0" refY="0" viewBox="-5 -5 10 10">
-							<circle cx="0" cy="0" fill="#8D48AB;stroke:none;" r="5" />
-						  </marker>
-						  <marker id="circle4" markerHeight="4" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="0" viewBox="-5 -5 10 10">
-							<circle cx="0" cy="0" r="5" style="fill:#8D48AB;stroke:none;" />
-						  </marker>
-						  <marker id="circle6" markerHeight="6" markerUnits="strokeWidth" markerWidth="6" orient="auto" refX="0" refY="0" viewBox="-5 -5 10 10">
-							<circle cx="0" cy="0" r="5" style="fill:#8D48AB;stroke:none;" />
-						  </marker>
-						</defs>
-						<rect x="10" y="10" stroke="white" id="noPurple1" style="stroke-width: 2px; fill-opacity: 0;" width="200" height="220" />
-						<g id="e390_group" transform="translate(5, 160)">
-						  <rect x="10" y="10" stroke="#8D48AB" id="e41_rectangle" style="stroke-width: 2px; fill-opacity: 0;" width="30" height="50" ry="0" rx="0" />
-						  <line id="e231_line" x1="10" y1="30" x2="40" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e271_line" x1="10" y1="40" x2="40" y2="20" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e285_line" x1="10" y1="50" x2="40" y2="30" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e299_line" x1="10" y1="60" x2="40" y2="40" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e352_line" x1="10" y1="20" x2="25" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e366_line" x1="40" y1="50" x2="25" y2="60" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						</g>
-						<line id="noPurple2" x1="50" y1="10" x2="50" y2="230" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<g id="e415_group" transform="translate(5, 10)">
-						  <rect x="10" y="10" stroke="#8D48AB" id="e415_rectangle" style="stroke-width: 2px; fill-opacity: 0;" width="30" height="50" ry="0" rx="0" />
-						  <line id="e415_line" x1="10" y1="10" x2="40" y2="30" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e416_line" x1="10" y1="20" x2="40" y2="40" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e417_line" x1="10" y1="30" x2="40" y2="50" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e418_line" x1="10" y1="40" x2="40" y2="60" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e419_line" x1="40" y1="20" x2="25" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e420_line" x1="10" y1="50" x2="25" y2="60" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						</g>
-						<g id="e610_group" transform="translate(165, 160)">
-						  <rect x="10" y="10" stroke="#8D48AB" id="e610_rectangle" style="stroke-width: 2px; fill-opacity: 0;" width="30" height="50" ry="0" rx="0" />
-						  <line id="e610_line" x1="10" y1="10" x2="40" y2="30" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e611_line" x1="10" y1="20" x2="40" y2="40" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e612_line" x1="10" y1="30" x2="40" y2="50" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e613_line" x1="10" y1="40" x2="40" y2="60" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e614_line" x1="40" y1="20" x2="25" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e615_line" x1="10" y1="50" x2="25" y2="60" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						</g>
-						<g id="e615_group" transform="translate(165, 10)" stroke="#8D48AB">
-						  <rect x="10" y="10" stroke="#8D48AB" id="e615_rectangle" style="stroke-width: 2px; fill-opacity: 0;" width="30" height="50" ry="0" rx="0" />
-						  <line id="e616_line" x1="10" y1="30" x2="40" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e617_line" x1="10" y1="40" x2="40" y2="20" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e618_line" x1="10" y1="50" x2="40" y2="30" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e619_line" x1="10" y1="60" x2="40" y2="40" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e620_line" x1="10" y1="20" x2="25" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						  <line id="e621_line" x1="40" y1="50" x2="25" y2="60" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						</g>
-						<line id="noPurple3" x1="170" y1="10" x2="170" y2="230.00000000000003" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="noPurple4" x1="50" y1="50" x2="170" y2="50" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="noPurple5" x1="60" y1="50" x2="60" y2="20" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="noPurple6" x1="60" y1="20" x2="90" y2="20" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="noPurple7" x1="160" y1="50" x2="160" y2="20" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="noPurple8" x1="160" y1="20" x2="130" y2="20" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<rect x="80" y="190" stroke="#8D48AB" id="e2265_rectangle" style="stroke-width: 2px; fill-opacity: 0;" width="60" height="30" />
-						<rect x="70" y="170" stroke="white" id="noPurple9" style="stroke-width: 2px; fill-opacity: 0;" width="5" height="50" />
-						<rect x="145" y="169.99999999999997" stroke="white" id="noPurple10" style="stroke-width: 2px; fill-opacity: 0;" width="5" height="50" />
-						<line id="noPurple12" x1="75" y1="205" x2="80" y2="205" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="noPurple11" x1="140" y1="205" x2="145" y2="205" stroke="white" style="stroke-width: 2px; fill: none;" />
-						<line id="e2639_line" x1="270" y1="10" x2="320" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-end: url(&quot;#circle4&quot;);" />
-						<line id="e2678_line" x1="270" y1="65" x2="320" y2="65" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-end: url(&quot;#circle4&quot;);" />
-						<line id="e2690_line" x1="270" y1="120" x2="320" y2="120" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-end: url(&quot;#circle4&quot;);" />
-						<line id="e2730_line" x1="270" y1="175" x2="320" y2="175" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-end: url(&quot;#circle4&quot;);" />
-						<line id="e2742_line" x1="270" y1="230" x2="320" y2="230" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-end: url(&quot;#circle4&quot;);" />
-						<line id="e2829_line" x1="190" y1="45" x2="235" y2="45" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-start: url(&quot;#circle4&quot;);" />
-						<line id="e2856_line" x1="235" y1="45" x2="270" y2="10" stroke="#8D48AB" style="stroke-width: 2px; fill: none; stroke-linecap: round;" />
-						<line id="e2883_line" x1="30" y1="45" x2="85" y2="100" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-start: url(&quot;#circle4&quot;);" />
-						<line id="e2897_line" x1="30" y1="195" x2="85" y2="140" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-start: url(&quot;#circle4&quot;);" />
-						<line id="e3015_line" x1="85" y1="100" x2="235" y2="100" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						<line id="e3029_line" x1="85" y1="140" x2="250" y2="140" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						<line id="e3108_line" x1="235" y1="100" x2="270" y2="65" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						<line id="e3122_line" x1="250" y1="140" x2="270" y2="120" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						<line id="e3188_line" x1="190" y1="195" x2="250" y2="195" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-start: url(&quot;#circle4&quot;);" />
-						<line id="e3293_line" x1="250" y1="195" x2="270" y2="175" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						<line id="e4158_line" x1="110" y1="205" x2="145" y2="240" stroke="#8D48AB" style="stroke-width: 2px; fill: none; marker-start: url(&quot;#circle4&quot;);" />
-						<line id="e4172_line" x1="145" y1="240" x2="260" y2="240" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-						<line id="e4186_line" x1="260" y1="240" x2="270" y2="230" stroke="#8D48AB" style="stroke-width: 2px; fill: none;" />
-					</svg>
+					<h1 id="w-node-a3f23b7991de-6cf0ea0e" class="heading-38">Heading</h1>
 					<div id="w-node-c9f29809e491-6cf0ea0e">
 						<div>
 							<h5 class="heading-33">Front left wheel:</h5>
 						</div>
 						<div>
-							<svg width="200" height="20">
-								<defs>
-									<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-										<stop offset="0%"   stop-color="#8D48AB"/>
-										<stop offset="100%" stop-color="#46C5DC"/>
-									</linearGradient>
-								</defs>
-								<g>
-								<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-								<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-								<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0</text>
-								</g>
-							</svg>
-						</div>
-						<div>
 							<h5 class="heading-34">Front right wheel:</h5>
 						</div>
-						<div>
-							<svg width="200" height="20">
-								<defs>
-									<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-										<stop offset="0%"   stop-color="#8D48AB"/>
-										<stop offset="100%" stop-color="#46C5DC"/>
-									</linearGradient>
-								</defs>
-								<g>
-								<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-								<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-								<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0</text>
-								</g>
-							</svg>
-						</div>
+						<div></div>
 						<div>
 							<h5 class="heading-35">Back left wheel:</h5>
 						</div>
-						<div>
-							<svg width="200" height="20">
-								<defs>
-									<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-										<stop offset="0%"   stop-color="#8D48AB"/>
-										<stop offset="100%" stop-color="#46C5DC"/>
-									</linearGradient>
-								</defs>
-								<g>
-								<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-								<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-								<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0</text>
-								</g>
-							</svg>
-						</div>
+						<div></div>
 						<div>
 							<h5 class="heading-36">Back right wheel:</h5>
 						</div>
-						<div>
-							<svg width="200" height="20">
-								<defs>
-									<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-										<stop offset="0%"   stop-color="#8D48AB"/>
-										<stop offset="100%" stop-color="#46C5DC"/>
-									</linearGradient>
-								</defs>
-								<g>
-								<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-								<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-								<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0</text>
-								</g>
-							</svg>
-						</div>
+						<div></div>
 						<div>
 							<h5 class="heading-37">Climber motor:</h5>
 						</div>
-						<div>
-							<svg width="200" height="20">
-								<defs>
-									<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-										<stop offset="0%"   stop-color="#8D48AB"/>
-										<stop offset="100%" stop-color="#46C5DC"/>
-									</linearGradient>
-								</defs>
-								<g>
-								<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-								<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-								<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0</text>
-								</g>
-							</svg>
-						</div>
+						<div></div>
 					</div>
 				</div>
 				<h3 id="w-node-cd31cf3f7280-6cf0ea0e" class="heading-40">Motors:</h3>
+				<div></div>
 				<div id="w-node-39642318854b-6cf0ea0e" class="div-block-6">
-					<!-- Gyroscope -->
-					<svg 
-						id="gyro"
-						width="175px"
-						height="175px"
-						margin-left="30px"
-						margin-top="15px">
-							<circle stroke="#8D48AB" stroke-width="2" fill="transparent" cx="85" cy="85" r="83"></circle>
-							<circle stroke="#46C5DC" stroke-width="2" fill="transparent" cx="85" cy="85" r="50"></circle>
-							<rect 
-								id="gyro-arm" 
-								stroke="white" 
-								stroke-width="2" 
-								fill="transparent" 
-								x="80" 
-								y="5" 
-								width="10" 
-								height="80"
-								-webkit-transform-origin="bottom"
-								-ms-transform-origin="bottom"
-								transform-origin="bottom"></rect>
-							<text 
-								id="gyro-number"
-								x="90" 
-								y="115"
-								font-size="25px"
-								text-anchor="middle"
-								letter-spacing="2px"
-								stroke="none"
-								fill="white"
-								>0&deg;</text>
-					</svg>
+					<h1 class="heading-45">Heading</h1>
 				</div>
 				<h3 id="w-node-59180e4c3c43-6cf0ea0e" class="heading-39">Orientation:</h3>
 			</div>
@@ -243,103 +55,15 @@
 						<div class="w-layout-grid grid-4">
 							<div id="w-node-43298ae6133b-6cf0ea0e" class="div-block-2">
 								<h5 class="heading-17">Battery Voltage:</h5>
-								<svg
-									class="progress-ring-bv"
-									width="70"
-									height="70">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<circle
-										class="progress-ring-bv__circle"
-										stroke="url(#linear)"
-										stroke-width="6"
-										fill="transparent"
-										r="30"
-										cx="35"
-										cy="35"/>
-									<text style="fill:white;font:28px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0%</text>
-									</g>
-								</svg>
 							</div>
 							<div id="w-node-15e9f934ad50-6cf0ea0e" class="div-block-4">
 								<h5 class="heading-20">RIO CPU Use:</h5>
-								<svg
-									class="progress-ring-cpu"
-									width="70"
-									height="70">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<circle
-										class="progress-ring-cpu__circle"
-										stroke="url(#linear)"
-										stroke-width="6"
-										fill="transparent"
-										r="30"
-										cx="35"
-										cy="35"/>
-									<text style="fill:white;font:28px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0%</text>
-									</g>
-								</svg>
 							</div>
 							<div id="w-node-3defdb326642-6cf0ea0e" class="div-block-3">
 								<h5 class="heading-19">Power Draw:</h5>
-								<svg
-									class="progress-ring-pd"
-									width="70"
-									height="70">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<circle
-										class="progress-ring-pd__circle"
-										stroke="url(#linear)"
-										stroke-width="6"
-										fill="transparent"
-										r="30"
-										cx="35"
-										cy="35"/>
-										<text style="fill:white;font:28px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0%</text>
-										</g>
-								</svg>
 							</div>
 							<div id="w-node-157ec8ba6692-6cf0ea0e" class="div-block-5">
 								<h5 class="heading-21">RIO RAM Use:</h5>
-								<svg
-									class="progress-ring-ram"
-									width="70"
-									height="70">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<circle
-										class="progress-ring-ram__circle"
-										stroke="url(#linear)"
-										stroke-width="6"
-										fill="transparent"
-										r="30"
-										cx="35"
-										cy="35"/>
-										<text style="fill:white;font:28px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0%</text>
-										</g>
-								</svg>
 							</div>
 						</div>
 					</div>
@@ -348,89 +72,11 @@
 							<h4 id="w-node-4c7e3a47e6f8-6cf0ea0e" class="heading-22">Power Usage By Device:</h4>
 							<div id="w-node-ebae20a21563-6cf0ea0e" class="w-layout-grid grid-9">
 								<h5 id="w-node-14fe47ea1d2f-6cf0ea0e" class="heading-24">Front left motor:</h5>
-								<svg width="200" height="20">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-									<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-									<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0 A</text>
-									</g>
-								</svg>
 								<h5 id="w-node-7ae277e31e9a-6cf0ea0e" class="heading-24">Front right motor:</h5>
-								<svg width="200" height="20">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-									<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-									<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0 A</text>
-									</g>
-								</svg>
 								<h5 id="w-node-63f87e57b504-6cf0ea0e" class="heading-24">Back left motor:</h5>
-								<svg width="200" height="20">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-									<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-									<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0 A</text>
-									</g>
-								</svg>
 								<h5 id="w-node-8a240cc9467e-6cf0ea0e" class="heading-24">Back right motor:</h5>
-								<svg width="200" height="20">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-									<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-									<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0 A</text>
-									</g>
-								</svg>
 								<h5 id="w-node-df2721a419aa-6cf0ea0e" class="heading-24">Climber motor:</h5>
-								<svg width="200" height="20">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-									<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-									<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0 A</text>
-									</g>
-								</svg>
 								<h5 id="w-node-e5158aac4cda-6cf0ea0e" class="heading-25">RoboRIO:</h5>
-								<svg width="200" height="20">
-									<defs>
-										<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-											<stop offset="0%"   stop-color="#8D48AB"/>
-											<stop offset="100%" stop-color="#46C5DC"/>
-										</linearGradient>
-									</defs>
-									<g>
-									<rect x="5" y="2" width="195" height="16" style="fill:#21323A" />
-									<rect x="5" y="2" width="95" height="16" style="fill:url(#linear)" />
-									<text style="fill:white;font:12px arial;" x="50%" y="50%" text-anchor="middle" dy="0.3em">0.0 A</text>
-									</g>
-								</svg>
 							</div>
 						</div>
 					</div>
@@ -490,16 +136,30 @@
 								</select>
 							</div>
 						</form>
-						<div class="w-form-done">
-							<div>Thank you! Your submission has been received!</div>
-						</div>
-						<div class="w-form-fail">
-							<div>Oops! Something went wrong while submitting the form.</div>
-						</div>
 					</div>
 				</div>
 			</div>
+			<div class="w-layout-grid grid-18">
+				<div id="w-node-d5b9dc18150d-6cf0ea0e" class="w-layout-grid grid-19">
+					<h1 id="w-node-f27107eb2fb2-6cf0ea0e" class="heading-3">Robot Status: </h1>
+					<h1 id="w-node-6ca20209b32e-6cf0ea0e" class="heading-46">disconnected</h1>
+					<a id="w-node-8c7b447ac25b-6cf0ea0e" href="#" class="button w-button">Connect</a>
+				</div>
+			</div>
+			<div class="w-layout-grid grid-21">
+				<h1 id="w-node-6b29bc748a04-6cf0ea0e" class="heading-4">Match Time: </h1>
+				<h1 id="w-node-14012e7d8a0d-6cf0ea0e" class="heading-47">00:00</h1>
+			</div>
+			<div id="w-node-664498c60291-6cf0ea0e" class="div-block-7">
+				<div class="w-form">
+					<form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2">
+						<div class="w-layout-grid grid-22"><input type="text" class="text-field-20 w-node-c900afc0c0bd-6cf0ea0e w-input" maxlength="256" name="connect-address" data-name="connect-address" placeholder="roborio-xxxx-frc.local" id="connect-address" required=""><input type="submit" value="Connect" id="w-node-a92d9f5444d2-6cf0ea0e" class="submit-button w-button"></div>
+					</form>
+				</div>
+			</div>
 		</div>
-		<script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><script src="https://uploads-ssl.webflow.com/5cd029db776bf60a4ef0ea0d/js/webflow.d48e3dcd4.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+		<script src="networktables/networktables.js"></script>
+		<script src="connection.js"></script>
+		<script src="ui.js"></script>
 	</body>
 </html>
