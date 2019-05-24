@@ -109,7 +109,6 @@ function onNetworkTablesChange(key, value, isNew) {
 	keyValuePair = ui.generalStatistics.find(kvp => kvp[1] === key);
 	
 	if (keyValuePair) {
-		alert('Hello');
 		var statisticCircle = keyValuePair[0].children[1].children[0];
 		var statisticText = keyValuePair[0].children[1].children[1];
 		
