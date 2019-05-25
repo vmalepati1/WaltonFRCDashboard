@@ -92,8 +92,6 @@ NetworkTables.addRobotConnectionListener(onRobotConnection, false);
 // Add function to be called when value changes in network tables
 NetworkTables.addGlobalListener(onNetworkTablesChange, false);
 
-onNetworkTablesChange('/WaltonDashboard/Debug/Has Valid Camera Data', false);
-
 function onRobotConnection(connected) {
 	if (connected) {
 		populateDefaultConfigurations();
@@ -124,6 +122,12 @@ function onNetworkTablesChange(key, value, isNew) {
 		var rangeMin = keyValuePair[2];
 		var rangeMax = keyValuePair[3];
 		var unit = keyValuePair[4];
+		
+		// Convert value ranged between 0 to 1 (real percentage value) to a range between 0 to 100
+		if (unit == '%') {
+			value *= 100.0;
+		}
+		
 		var percent = value > rangeMin ? (value / rangeMax) : rangeMin;
 		
 		const radius = statisticCircle.r.baseVal.value;
