@@ -1,6 +1,15 @@
 let ui = {
     timer: document.getElementById('w-node-14012e7d8a0d-6cf0ea0e'),
     robotState: document.getElementById('w-node-6ca20209b32e-6cf0ea0e'),
+	camera: {
+		viewer: document.querySelector('.image-2'),
+		id: 0,
+		srcs: [ // Will default to first camera
+			'http://10.29.74.11:5801',
+			'https://wallpaperplay.com/walls/full/5/3/0/10478.jpg',
+			'http://4.bp.blogspot.com/-7FFzCzLpXJU/UsDaQ8msxtI/AAAAAAAAFNk/wBnDqMKqJqo/s1600/desktop+free+wallpaper+download+20149.jpg'
+		]
+	},
 	configurationBox: [
 		[document.getElementById('Constants-KV'), '/WaltonDashboard/Constants/KV'],
 		[document.getElementById('Constants-KAcc'), '/WaltonDashboard/Constants/KAcc'],
