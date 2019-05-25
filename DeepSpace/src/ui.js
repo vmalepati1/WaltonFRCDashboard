@@ -20,7 +20,11 @@ let ui = {
 		[document.getElementById('Motion-Hatch-PickUp-X'), '/WaltonDashboard/Motion/Hatch PickUp X'],
 		[document.getElementById('Motion-Hatch-PickUp-Y'), '/WaltonDashboard/Motion/Hatch PickUp Y'],
 		[document.getElementById('Motion-Hatch-PickUp-Angle'), '/WaltonDashboard/Motion/Hatch PickUp Angle'],
-		[document.getElementById('Autonomous-Select'), 'Auton']
+		[document.getElementById('Autonomous-Select'), 'Auton'],
+		[document.getElementById('Motion-Distance'), '/WaltonDashboard/Motion/Distance'],
+		[document.getElementById('Alignment-Steer-K'), '/WaltonDashboard/Alignment/Steer K'],
+		[document.getElementById('Alignment-Drive-K'), '/WaltonDashboard/Alignment/Drive K'],
+		[document.getElementById('Alignment-Camera-Distance'), '/WaltonDashboard/Alignment/Camera Distance']
 	],
 	diagnosticsTiles: [
 		[document.getElementById('w-node-ece068a8fbe3-6cf0ea0e'), '/WaltonDashboard/Motors/Elevator Height'],
@@ -52,7 +56,10 @@ let ui = {
 		[document.getElementById('w-node-04c10c4157ee-6cf0ea0e'), '/WaltonDashboard/Drivetrain/Encoder Left'],
 		[document.getElementById('w-node-39646deb58ba-6cf0ea0e'), '/WaltonDashboard/Drivetrain/leftSpeed'],
 		[document.getElementById('w-node-6a6121c16e8e-6cf0ea0e'), '/WaltonDashboard/Drivetrain/rightSpeed'],
-		[document.getElementById('w-node-75d3c40bd623-6cf0ea0e'), '/WaltonDashboard/Drivetrain/leftMotor']
+		[document.getElementById('w-node-75d3c40bd623-6cf0ea0e'), '/WaltonDashboard/Drivetrain/leftMotor'],
+		[document.getElementById('w-node-3b7aac34ca61-6cf0ea0e'), '/WaltonDashboard/Debug/Camera Vision'],
+		[document.getElementById('w-node-4016fdf5dfa0-6cf0ea0e'), '/WaltonDashboard/Debug/Has Valid Camera Data'],
+		[document.getElementById('w-node-d5982c31738d-6cf0ea0e'), '/WaltonDashboard/Debug/Dial']
 	],
 	generalStatistics: [
 		[document.querySelector('.progress-ring-bv'), '/WaltonDashboard/Diagnostics/Battery Voltage', 0.0, 12.0, 'v'],
@@ -84,6 +91,8 @@ let ui = {
 NetworkTables.addRobotConnectionListener(onRobotConnection, false);
 // Add function to be called when value changes in network tables
 NetworkTables.addGlobalListener(onNetworkTablesChange, false);
+
+onNetworkTablesChange('/WaltonDashboard/Debug/Has Valid Camera Data', false);
 
 function onRobotConnection(connected) {
 	if (connected) {
@@ -224,7 +233,7 @@ function onConfigurationChange(event) {
 	// Find document element and its network table key pair within configuration box array
 	var keyValuePair = ui.configurationBox.find(kvp => kvp[0] === event.target);
 	var networkTablesKey = keyValuePair[1];
-
+	
 	// Handle special cases (ex. auton selection is sent by a combination of booleans instead of by a string)
 	if (networkTablesKey == 'Auton') {
 		if (event.target.value == 'Disabled') {
