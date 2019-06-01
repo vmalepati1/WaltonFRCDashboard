@@ -1,3 +1,5 @@
+const wmi = require('node-wmi');
+
 let ui = {
     timer: document.getElementById('w-node-14012e7d8a0d-6cf0ea0e'),
     robotState: document.getElementById('w-node-6ca20209b32e-6cf0ea0e'),
@@ -10,6 +12,7 @@ let ui = {
 			'http://4.bp.blogspot.com/-7FFzCzLpXJU/UsDaQ8msxtI/AAAAAAAAFNk/wBnDqMKqJqo/s1600/desktop+free+wallpaper+download+20149.jpg'
 		]
 	},
+	packetsPerSecondText: document.querySelector('.heading-16'),
 	configurationBox: [
 		[document.getElementById('Constants-KV'), '/WaltonDashboard/Constants/KV'],
 		[document.getElementById('Constants-KAcc'), '/WaltonDashboard/Constants/KAcc'],
@@ -93,13 +96,16 @@ let ui = {
 	],
 	gyroscope: [
 		[document.getElementById('gyro'), '/WaltonDashboard/Diagnostics/Gyro Orientation', 0.0]
-	]
+	],
 };
 
 // Set function to be called when robot dis/connects
 NetworkTables.addRobotConnectionListener(onRobotConnection, false);
 // Add function to be called when value changes in network tables
 NetworkTables.addGlobalListener(onNetworkTablesChange, false);
+
+// Update current bandwidth usage every second
+setInterval(updatePacketsPerSecondText, 1000);
 
 function onRobotConnection(connected) {
 	if (connected) {
@@ -266,4 +272,12 @@ function onConfigurationChange(event) {
 	} else {
 		NetworkTables.putValue(networkTablesKey, parseFloat(event.target.value));
 	}
+}
+
+function updatePacketsPerSecondText() {
+	wmi.Query().class('Win32_PerfFormattedData_Tcpip_NetworkInterface', function(err, networkData) {
+		var previousPacketsPerSecondText = ui.packetsPerSecondText.innerHTML;
+		var newPacketsPerSecondText = previousPacketsPerSecondText.split(':')[0] + ': ' + (networkData[0]['PacketsPersec']).toString();
+		ui.packetsPerSecondText.innerHTML = newPacketsPerSecondText;
+	});
 }
