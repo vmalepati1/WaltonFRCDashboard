@@ -1,24 +1,24 @@
 {
-  "name": "FRCDashboard",
-  "version": "2.1.0",
-  "description": "Robot control dashboard boilerplate for FRC.",
+  "name": "WaltonDashboard",
+  "version": "1.0.0",
+  "description": "Walton custom dashboard based on FRCDashboard.",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "package-mac": "electron-packager . --platform=darwin --icon=images/icon.icns --out dist/",
-    "package-linux": "electron-packager . --platform=linux --icon=images/icon.png --out dist/",
-    "package-win": "electron-packager . --platform=win32 --icon=images/icon.ico --out dist/"
+    "package-mac": "electron-packager . --platform=darwin --out dist/",
+    "package-linux": "electron-packager . --platform=linux --icon=assets/walton_robotics_logo.png --out dist/",
+    "package-win": "electron-packager . --platform=win32 --icon=assets/walton_robotics_logo.ico --out dist/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FRCDashboard/FRCDashboard"
+    "url": "git+https://github.com/vmalepati1/WaltonDashboard"
   },
-  "author": "Erik Boesen",
+  "author": "Vikas Malepati",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FRCDashboard/FRCDashboard/issues"
+    "url": "https://github.com/vmalepati1/WaltonDashboard/issues"
   },
-  "homepage": "http://frcdashboard.github.io",
+  "homepage": "https://github.com/vmalepati1/WaltonDashboard#readme",
   "devDependencies": {
     "electron": "^1.7.12",
     "electron-packager": "^10.1.1"
