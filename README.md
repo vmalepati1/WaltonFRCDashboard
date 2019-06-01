@@ -1,6 +1,8 @@
 # WaltonDashboard
 Walton custom dashboard based on `FRCDashboard`.
 
+![Walton Dashboard Screenshot](/DeepSpace/assets/screenshot.PNG)
+
 ## Getting Started
 
 ### Setup
