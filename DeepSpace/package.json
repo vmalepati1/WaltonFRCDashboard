@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
+	"install": "electron-rebuild",
     "package-mac": "electron-packager . --platform=darwin --out dist/",
     "package-linux": "electron-packager . --platform=linux --icon=assets/walton_robotics_logo.png --out dist/",
     "package-win": "electron-packager . --platform=win32 --icon=assets/walton_robotics_logo.ico --out dist/"
@@ -21,10 +22,12 @@
   "homepage": "https://github.com/vmalepati1/WaltonDashboard#readme",
   "devDependencies": {
     "electron": "^1.7.12",
-    "electron-packager": "^10.1.1"
+    "electron-packager": "^10.1.1",
+    "electron-rebuild": "^1.8.5"
   },
   "dependencies": {
     "wpilib-nt-client": "^1.7.1",
-	"node-wmi": "^0.0.5"
+    "node-wmi": "^0.0.5",
+    "serialport": "^7.1.5"
   }
 }

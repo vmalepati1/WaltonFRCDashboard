@@ -97,6 +97,12 @@ function createWindow() {
 	ipc.on('windowError', (ev, error) => {
 		console.log(error);
 	});
+	ipc.on('serialConnect', (ev, path, baudRate) => {
+		console.log(`Serial port opened on ${path} at ${baudRate} baud`);
+	});
+	ipc.on('serialWriteError', (ev, error) => {
+		console.log(error);
+	});
 	// Create the browser window.
 	mainWindow = new BrowserWindow({
 		width: 1366,

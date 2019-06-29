@@ -274,6 +274,12 @@ function onConfigurationChange(event) {
 	}
 }
 
+NetworkTables.addKeyListener('/WaltonDashboard/Match Timer', (key, value) => {
+	// Set the timer text to be the time left in the match
+	var secondsInt = Math.floor(value);
+    ui.timer.textContent = secondsInt < 0 ? '0:00' : Math.floor(secondsInt / 60) + ':' + (secondsInt % 60 < 10 ? '0' : '') + secondsInt % 60;
+});
+
 function updatePacketsPerSecondText() {
 	wmi.Query().class('Win32_PerfFormattedData_Tcpip_NetworkInterface', function(err, networkData) {
 		var previousPacketsPerSecondText = ui.packetsPerSecondText.innerHTML;
