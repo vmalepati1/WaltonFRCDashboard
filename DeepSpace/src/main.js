@@ -100,8 +100,14 @@ function createWindow() {
 	ipc.on('serialConnect', (ev, path, baudRate) => {
 		console.log(`Serial port opened on ${path} at ${baudRate} baud`);
 	});
+	ipc.on('serialError', (ev, error) => {
+		console.log(error);
+	});
 	ipc.on('serialWriteError', (ev, error) => {
 		console.log(error);
+	});
+	ipc.on('serialDebugReadback', (ev, readback) => {
+		console.log(readback);
 	});
 	// Create the browser window.
 	mainWindow = new BrowserWindow({

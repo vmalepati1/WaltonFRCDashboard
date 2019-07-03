@@ -1,8 +1,11 @@
-const path = 'COM3';
+const path = 'COM6';
 const baudRate = 9600;
 const outputInterval = 1000;
 const SerialPort = require('serialport');
+const Readline = require('@serialport/parser-readline');
 const port = new SerialPort(path, { baudRate: baudRate });
+const parser = port.pipe(new Readline({ delimiter: '\n' }));
+const exists = portName => SerialPort.list().then(ports => ports.some(port => port.comName === portName ));
 
 var portOutputIntervalHandle = null;
 
@@ -21,10 +24,22 @@ port.on("close", () => {
 	}
 });
 
+// Open errors will be emitted as an error event
+port.on('error', function(err) {
+  ipc.send('serialError', err.message);
+});
+
+// Enable if you want to see the messages sent from the dashboard to the Arduino in the console
+/*
+parser.on('data', data =>{
+  ipc.send('serialDebugReadback', data);
+});
+*/
+
 function onRobotConnection(connected) {
 	if (connected) {
 		// Enable interval port output function if connection was successful
-		if (port.isOpen()) {
+		if (exists(path)) {
 			portOutputIntervalHandle = setInterval(portOutput, outputInterval);
 		}
 	} else {
