@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/vmalepati1/WaltonDashboard#readme",
   "devDependencies": {
-    "electron": "^1.7.12",
+    "electron": "^15.5.5",
     "electron-packager": "^10.1.1",
     "electron-rebuild": "^1.8.5"
   },
